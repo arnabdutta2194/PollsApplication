@@ -25,9 +25,14 @@ def detail(request,question_id):
     #     raise Http404('Question Does Not Exists')
     question = get_object_or_404(Question, pk=question_id)
     return render(request, 'polls/detail.html', {'question':question})
+
+
 def results(request, question_id):
     response = "You are looking at the result of question %s"
     return HttpResponse(response % question_id)
 
 def vote(request, question_id):
     return HttpResponse("You are voting on question %s." % question_id)
+
+def owner(request):
+    return HttpResponse("Hello, World 816a6db4 is the polls index")
