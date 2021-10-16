@@ -49,20 +49,20 @@ class IndexView(generic.ListView):
 
 class DetailView(generic.DetailView):
     model = Question
-    template = 'polls/detail.html'
+    template_name = 'polls/detail.html'
 
-    def get(self,request,question_id):
-        question = get_object_or_404(Question, pk=question_id)
-        return render(request, 'polls/detail.html' , {'question':question})
+    # def get(self,request,pk):
+    #     question = get_object_or_404(Question, pk)
+    #     return render(request, 'polls/detail.html' , {'question':question})
 
 
 class ResultsView(generic.DetailView):
     model = Question
     template_name = 'polls/results.html'
 
-    def get(self,request, question_id):
-        question = get_object_or_404(Question, pk=question_id)
-        return render(request, 'polls/results.html' , {'question':question})
+    # def get(self,request, question_id):
+    #     question = get_object_or_404(Question, pk=question_id)
+    #     return render(request, 'polls/results.html' , {'question':question})
 
 
 
