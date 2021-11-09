@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions', #Session Framework
     'django.contrib.messages', #Messaging Framework
     'django.contrib.staticfiles', #Managing Static File
-    'polls.apps.PollsConfig' #Manging Custom App(Polls)
+    'polls.apps.PollsConfig', #Manging Custom App(Polls)
+    'home.apps.HomeConfig', #Manging Custom App(Home))
+    'hello.apps.HelloConfig' #Manging Custom App(Hello)
 ]
 
 MIDDLEWARE = [
