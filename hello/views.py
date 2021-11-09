@@ -6,5 +6,4 @@ from django.http import HttpResponse
 def myview(request):
     resp = HttpResponse()
     resp.set_cookie('dj4e_cookie','ad7ed5d4',max_age=1000)
-
     return resp

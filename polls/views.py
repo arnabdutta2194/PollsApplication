@@ -85,4 +85,4 @@ def vote(request, question_id):
     
 
 def owner(request):
-    return HttpResponse("Hello, World 816a6db4 is the polls index")
+    return HttpResponse("Hello, World ad7ed5d4 is the polls index")
