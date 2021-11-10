@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'polls.apps.PollsConfig', #Manging Custom App(Polls)
     'home.apps.HomeConfig', #Manging Custom App(Home))
     'hello.apps.HelloConfig', #Manging Custom App(Hello)
-    'autos.apps.AutosConfig' #Manging Custom App(Autos)
+    'autos.apps.AutosConfig', #Manging Custom App(Autos)
+    'cats.apps.CatsConfig' #Manging Custom App(Autos)
 ]
 
 MIDDLEWARE = [
